@@ -1,0 +1,111 @@
+body {
+    font-family: 'Inter';
+    font-size: 16px;
+    color: #141414;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 20rem;
+}
+
+.nav-icon {
+    width: 1.5rem;
+    margin: 0 1rem;
+}
+
+.social-icon {
+    width: 2rem;
+}
+
+/* Company Logo */
+.company-logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: 'Russo One';
+    color: #524b6d;
+}
+
+.company-logo span {
+    color: #87b5b8;
+}
+
+main {
+    margin-top: 3rem;                           /* Offset for fixed header */
+}
+
+/* Header */
+.header-container {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.header-container .company-logo {
+    margin-left: 3rem;
+}
+
+.header-container ul {
+    display: flex;
+}
+
+.header-container li {
+    margin: 0 2.75rem;
+}
+
+.header-container li a {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #141414;
+}
+
+.header-container li a:hover {
+    color: #87b5b8;
+}
+
+.search-login-cart {
+    margin-right: 2rem;
+}
+
+/* Product Showcase */
+.product-showcase {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(6, 0.25fr);
+}
+
+.product-showcase img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#showcase-img1 {
+    grid-column: 1 / 9;
+    grid-row: 1 / 7;
+}
+
+#showcase-img2 {
+    grid-column: 9 / 17;
+    grid-row: 1 / 4;
+}
+
+#showcase-img3 {
+    grid-column: 9 / 13;
+    grid-row: 4 / 7;
+}
+
+#showcase-img4 {
+    grid-column: 13 / 17;
+    grid-row: 4 / 7;
+}
+
+/* Product Banners */
