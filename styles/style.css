@@ -12,15 +12,6 @@ img {
     width: 20rem;
 }
 
-.nav-icon {
-    width: 1.5rem;
-    margin: 0 1rem;
-}
-
-.social-icon {
-    width: 2rem;
-}
-
 /* Company Logo */
 .company-logo {
     font-size: 1.6rem;
@@ -62,18 +53,24 @@ main {
     margin: 0 2.75rem;
 }
 
-.header-container li a {
+.header-container li .nav-links {
     font-size: 0.9rem;
     font-weight: bold;
     color: #141414;
+    transition: color 0.15s ease-in-out;
 }
 
-.header-container li a:hover {
+.header-container li .nav-links:hover {
     color: #87b5b8;
 }
 
 .search-login-cart {
     margin-right: 2rem;
+}
+
+.nav-icon {
+    width: 1.5rem;
+    margin: 0 1rem;
 }
 
 /* Product Showcase */
@@ -128,7 +125,7 @@ main {
     filter: brightness(50%);
 }
 
-.product-banner .banner-desc {
+.product-banner .banner-info {
     position: absolute;
     top: 47rem;
     left: 12rem;
@@ -142,7 +139,7 @@ main {
     margin-bottom: 1.5rem;
 }
 
-.product-banner a {
+.product-redirect {
     color: white;
     font-size: 1.5rem;
     border: 1px solid white;
@@ -153,9 +150,10 @@ main {
 
 .ergoform-container {
     margin-top: 2.25rem;
+    position: relative;
 }
 
-.ergoform-container .ergoform-img-container {
+.ergoform-img-container {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -164,4 +162,129 @@ main {
 .ergoform-container img {
     width: 100%;
     object-fit: cover;
+    filter: brightness(50%);
+}
+
+.ergoform-info {
+    position: absolute;
+    font-weight: bold;
+    letter-spacing: -0.05rem;
+    color: white;
+    top: 10rem;
+    left: 10rem;
+}
+
+.ergoform-info h2 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+#ergoform-tagline {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+#ergoform-desc {
+    font-weight: 400;
+    font-size: 1.5rem;
+    width: 38rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+#ergoform-redirect {
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid white;
+    font-size: 1.25rem;
+}
+
+/* Footer */
+.footer-container h3 {
+    font-weight: bold;
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.left-footer {
+    margin-left: 7rem;
+}
+
+.socials {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    width: 2.5rem;
+    margin-right: 0.75rem;
+}
+
+#email-form {
+    display: flex;
+}
+
+#email-input {
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+#email-input:focus {
+    outline: none;
+}
+
+#email-submit {
+    border: none;
+    background-color: #524b6d;
+    color: white;
+    font-weight: bold;
+}
+
+#email-submit:hover {
+    cursor: pointer;
+}
+
+.right-footer {
+    display: flex;
+    margin-right: 3rem;
+}
+
+.list-footer {
+    margin-right: 4rem;
+}
+
+#product-footer {
+    margin-right: 5.25rem;
+}
+
+.list-footer li {
+    margin-bottom: 0.4rem;
+}
+
+.list-footer li a {
+    color:#141414
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+.bottom-footer .company-logo {
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+.legal-statements {
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
 }

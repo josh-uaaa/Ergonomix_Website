@@ -14,10 +14,10 @@
                 <a href="./index.html" class="company-logo">ERGO<span>NOMIX</span></a>
                 <nav>
                     <ul>
-                        <li><a href="#">PRODUCTS</a></li>
-                        <li><a href="#">ERGOFORM</a></li>
-                        <li><a href="#">SUPPORT</a></li>
-                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#" class="nav-links">PRODUCTS</a></li>
+                        <li><a href="#" class="nav-links">ERGOFORM</a></li>
+                        <li><a href="#" class="nav-links">SUPPORT</a></li>
+                        <li><a href="#" class="nav-links">ABOUT</a></li>
                     </ul>
                 </nav>
                 <div class="search-login-cart">
@@ -39,7 +39,7 @@
                 <div class="banner-img-container">
                     <img src="./imgs/banner_peripherals.jpg"/>
                 </div>
-                <div class="banner-desc">
+                <div class="banner-info">
                     <h2>PERIPHERALS</h2>
                     <a href="#" class="product-redirect">SHOP NOW</a>
                 </div>
@@ -48,7 +48,7 @@
                 <div class="banner-img-container">
                     <img src="./imgs/banner_furniture.jpg"/>
                 </div>
-                <div class="banner-desc">
+                <div class="banner-info">
                     <h2>FURNITURES</h2>
                     <a href="#" class="product-redirect">SHOP NOW</a>
                 </div>
@@ -57,7 +57,7 @@
                 <div class="banner-img-container">
                     <img src="./imgs/banner_others.jpg"/>
                 </div>
-                <div class="banner-desc">
+                <div class="banner-info">
                     <h2>OTHERS</h2>
                     <a href="#" class="product-redirect">SHOP NOW</a>
                 </div>
@@ -67,7 +67,10 @@
                     <img src="./imgs/banner_ergoform.jpg"/>
                 </div>
                 <div class="ergoform-info">
-                    <p><span>ERGOFORM</span>: Ergonomic Forming, Customized For You. By You.</p>
+                    <h2>ERGOFORM</h2>
+                    <p id="ergoform-tagline">Ergonomic Forming, Customized For You.</p>
+                    <p id="ergoform-desc">Our professionals will assess your workspace, provide personalized recommendations, and implement
+                        solutions that prioritize comfort, productivity, and well-being.</p>
                     <a href="#" id="ergoform-redirect">LEARN MORE</a>
                 </div>
             </div>
@@ -75,21 +78,21 @@
 
         <footer>
             <div class="footer-container">
-                <div class="left-footer">
-                    <div class="socials">
-                        <img src="./imgs/icon-twitter.png" class="social-icon" id="twitter"/>
-                        <img src="./imgs/icon-instagram.png" class="social-icon" id="instagram"/>
-                        <img src="./imgs/icon-discord.png" class="social-icon" id="discord"/>
+                <div class="top-footer">
+                    <div class="left-footer">
+                        <h3>SOCIALS</h3>
+                        <div class="socials">
+                            <img src="./imgs/icon-twitter.png" class="social-icon" id="twitter"/>
+                            <img src="./imgs/icon-instagram.png" class="social-icon" id="instagram"/>
+                            <img src="./imgs/icon-discord.png" class="social-icon" id="discord"/>
+                        </div>
+                        <form action="#" id="email-form">
+                            <input type="email" id="email-input" name="email-input" placeholder="email address..."/>
+                            <input type="submit" id="email-submit" value="SUBSCRIBE"/>
+                        </form>
                     </div>
-                    <form id="email-form">
-                        <input type="text" id="email-input" placeholder="email address..."/>
-                        <input type="submit" id="email-submit" value="SUBMIT"/>
-                    </form>
-                    <a href="./index.html" class="company-logo">ERGO<span>NOMIX</span></a>
-                </div>
-                <div class="right-footer">
-                    <div class="nav-footer-container">
-                        <div class="product-footer">
+                    <div class="right-footer">
+                        <div class="list-footer" id="product-footer">
                             <h3>PRODUCTS</h3>
                             <ul>
                                 <li><a href="#">ERGOFORM™</a></li>
@@ -98,16 +101,16 @@
                                 <li><a href="#">OTHERS</a></li>
                             </ul>
                         </div>
-                        <div class="support-footer">
+                        <div class="list-footer" id="support-footer">
                             <h3>SUPPORT</h3>
                             <ul>
                                 <li><a href="#">WARRANTY</a></li>
                                 <li><a href="#">REGISTER</a></li>
-                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">FAQs</a></li>
                                 <li><a href="#">CONTACT US</a></li>
                             </ul>
                         </div>
-                        <div class="community-footer">
+                        <div class="list-footer" id="community-footer">
                             <h3>COMMUNITY</h3>
                             <ul>
                                 <li><a href="#">ABOUT US</a></li>
@@ -116,6 +119,9 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+                <div class="bottom-footer">
+                    <a href="./index.html" class="company-logo">ERGO<span>NOMIX</span></a>
                     <p class="legal-statements">@2025 Ergoflo®. All Rights Reserved.</p>
                 </div>
             </div>
