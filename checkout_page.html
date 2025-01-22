@@ -11,24 +11,55 @@
     <body>
         <div class="content-wrapper">
             <header>
-                <a href="./home_page.html" class="company-logo">ERGO<span>NOMIX</span></a>
+                <div class="header-wrapper">
+                    <a href="./home_page.html" class="company-logo">ERGO<span>NOMIX</span></a>
+                </div>
             </header>
     
             <main>
                 <div class="checkout-container">
-                    <form action="#" id="checkout-form">
-                        <input type="text" placeholder="First Name" name="first-name" id="first-name" required>
-                        <input type="text" placeholder="Last Name" name="last-name" id="last-name" required>
-                        <input type="text" placeholder="Address" name="address" id="address" required>
-                        <input type="text" placeholder="Apartment, suite, etc. (optional)" name="address-optional" id="address-optional">
-                        <input type="text" placeholder="City" name="city" id="city" required>
-                        <input type="text" placeholder="State" name="state" id="state" required>
-                        <input type="text" placeholder="ZIP Code" name="zip-code" id="zip-code" required>
-                        <input type="text" placeholder="Phone" name="phone-number" id="phone-number" required>
-                    </form>
+                    <div class="delivery-form-container">
+                        <h1>Delivery</h1>
+                        <form action="#" id="delivery-form">
+                            <label for="first-name">First Name</label>
+                            <input type="text" placeholder="First Name" name="first-name" id="first-name" required>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" placeholder="Last Name" name="last-name" id="last-name" required>
+                            <label for="address">Address</label>
+                            <input type="text" placeholder="Address" name="address" id="address" required>
+                            <label for="address-optional">Apartment, Suite, Etc.</label>
+                            <input type="text" placeholder="Apartment, suite, etc. (optional)" name="address-optional" id="address-optional">
+                            <label for="city">City</label>
+                            <input type="text" placeholder="City" name="city" id="city" required>
+                            <label for="state">State</label>
+                            <input type="text" placeholder="State" name="state" id="state" required>
+                            <label for="zip-code">ZIP Code</label>
+                            <input type="text" placeholder="ZIP Code" name="zip-code" id="zip-code" required>
+                            <label for="phone-number">Phone</label>
+                            <input type="text" placeholder="Phone" name="phone-number" id="phone-number" required>
+                        </form>
+                    </div>
+                    <div class="payment-form-container">
+                        <h1>Payment</h1>
+                        <form action="#" id="payment-form">
+                            <label for="card-name">Name on Card</label>
+                            <input type="text" placeholder="Name on Card" name="card-name" id="card-name" required>
+                            <label for="card-number">Card Number</label>
+                            <input type="text" placeholder="Card Number" name="card-number" id="card-number" required>
+                            <label for="card-expiration">Expiration Date</label>
+                            <input type="text" placeholder="MM/YY" name="card-expiration" id="card-expiration" required>
+                            <label for="card-cvc">CVC</label>
+                            <input type="text" placeholder="CVC" name="card-cvc" id="card-cvc" required>
+                            <label for="card-zip">ZIP Code</label>
+                            <input type="text" placeholder="ZIP Code" name="card-zip" id="card-zip" required>
+                        </form>
+                    </div>
+                    <button id="checkout-button">Pay Now</button>
                 </div>
                 <div class="cart-container">
-                    <!-- Items go on here... -->
+                    <div class="cart-items">
+                        <!-- Items go on here... -->
+                    </div>
                      <div id="cart-info">
                         <p>Subtotal</p>
                         <p>Shipping</p>
