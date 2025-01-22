@@ -12,6 +12,10 @@ img {
     width: 20rem;
 }
 
+main {
+    margin-top: 3rem;                           /* Offset for fixed header */
+}
+
 /* Company Logo */
 .company-logo {
     font-size: 1.6rem;
@@ -22,10 +26,6 @@ img {
 
 .company-logo span {
     color: #87b5b8;
-}
-
-main {
-    margin-top: 3rem;                           /* Offset for fixed header */
 }
 
 /* Header */

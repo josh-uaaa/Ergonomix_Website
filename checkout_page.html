@@ -9,20 +9,34 @@
         <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <a href="./home_page.html" class="company-logo">ERGO<span>NOMIX</span></a>
-        </header>
-
-        <main>
-            <div class="checkout-container">
-                <form action="#" id="checkout-form">
-
-                </form>
-            </div>
-            <div class="cart-container">
-
-            </div>
-        </main>
+        <div class="content-wrapper">
+            <header>
+                <a href="./home_page.html" class="company-logo">ERGO<span>NOMIX</span></a>
+            </header>
+    
+            <main>
+                <div class="checkout-container">
+                    <form action="#" id="checkout-form">
+                        <input type="text" placeholder="First Name" name="first-name" id="first-name" required>
+                        <input type="text" placeholder="Last Name" name="last-name" id="last-name" required>
+                        <input type="text" placeholder="Address" name="address" id="address" required>
+                        <input type="text" placeholder="Apartment, suite, etc. (optional)" name="address-optional" id="address-optional">
+                        <input type="text" placeholder="City" name="city" id="city" required>
+                        <input type="text" placeholder="State" name="state" id="state" required>
+                        <input type="text" placeholder="ZIP Code" name="zip-code" id="zip-code" required>
+                        <input type="text" placeholder="Phone" name="phone-number" id="phone-number" required>
+                    </form>
+                </div>
+                <div class="cart-container">
+                    <!-- Items go on here... -->
+                     <div id="cart-info">
+                        <p>Subtotal</p>
+                        <p>Shipping</p>
+                        <p>Total</p>
+                     </div>
+                </div>
+            </main>
+        </div>
     </body>
 
 </html>
