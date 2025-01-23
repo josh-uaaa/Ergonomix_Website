@@ -1,73 +1,117 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Ergonomix</title>
-        <link rel="stylesheet" type="text/css" href="styles/reset.css">
-        <link rel="stylesheet" type="text/css" href="styles/checkout.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="content-wrapper">
-            <header>
-                <div class="header-wrapper">
-                    <a href="./home_page.html" class="company-logo">ERGO<span>NOMIX</span></a>
-                </div>
-            </header>
-    
-            <main>
-                <div class="checkout-container">
-                    <div class="delivery-form-container">
-                        <h1>Delivery</h1>
-                        <form action="#" id="delivery-form">
+
+<head>
+    <title>Ergonomix</title>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/checkout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <header>
+            <div class="header-wrapper">
+                <a href="./home_page.html" class="company-logo">ERGO<span>NOMIX</span></a>
+            </div>
+        </header>
+
+        <main>
+            <div class="checkout-container">
+                <div class="delivery-form-container">
+                    <h1>Delivery</h1>
+                    <form action="#" id="delivery-form">
+                        <div class="form-group" id="name-group">
                             <label for="first-name">First Name</label>
                             <input type="text" placeholder="First Name" name="first-name" id="first-name" required>
                             <label for="last-name">Last Name</label>
                             <input type="text" placeholder="Last Name" name="last-name" id="last-name" required>
+                        </div>
+                        <div class="form-group" id="address-group">
                             <label for="address">Address</label>
                             <input type="text" placeholder="Address" name="address" id="address" required>
-                            <label for="address-optional">Apartment, Suite, Etc.</label>
-                            <input type="text" placeholder="Apartment, suite, etc. (optional)" name="address-optional" id="address-optional">
+                        </div>
+                        <div class="form-group" id="address-optional-group">
+                            <label for="address-optional">Apt, Suite, Etc.</label>
+                            <input type="text" placeholder="Apartment, Suite, Etc. (Optional)" name="address-optional"
+                                id="address-optional">
+                        </div>
+                        <div class="form-group" id="city-state-zip-group">
                             <label for="city">City</label>
                             <input type="text" placeholder="City" name="city" id="city" required>
                             <label for="state">State</label>
                             <input type="text" placeholder="State" name="state" id="state" required>
-                            <label for="zip-code">ZIP Code</label>
+                            <label for="zip-code">ZIP</label>
                             <input type="text" placeholder="ZIP Code" name="zip-code" id="zip-code" required>
+                        </div>
+                        <div class="form-group" id="email-group">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Email" name="email" id="email" required>
+                        </div>
+                        <div class="form-group" id="phone-group">
                             <label for="phone-number">Phone</label>
                             <input type="text" placeholder="Phone" name="phone-number" id="phone-number" required>
-                        </form>
-                    </div>
-                    <div class="payment-form-container">
-                        <h1>Payment</h1>
-                        <form action="#" id="payment-form">
+                        </div>
+                    </form>
+                </div>
+                <div class="payment-form-container">
+                    <h1>Payment</h1>
+                    <form action="#" id="payment-form">
+                        <div class="form-group" id="card-name-group">
                             <label for="card-name">Name on Card</label>
                             <input type="text" placeholder="Name on Card" name="card-name" id="card-name" required>
+                        </div>
+                        <div class="form-group" id="card-number-group">
                             <label for="card-number">Card Number</label>
                             <input type="text" placeholder="Card Number" name="card-number" id="card-number" required>
-                            <label for="card-expiration">Expiration Date</label>
+                        </div>
+                        <div class="form-group" id="card-details-group">
+                            <label for="card-expiration">Exp.</label>
                             <input type="text" placeholder="MM/YY" name="card-expiration" id="card-expiration" required>
                             <label for="card-cvc">CVC</label>
                             <input type="text" placeholder="CVC" name="card-cvc" id="card-cvc" required>
-                            <label for="card-zip">ZIP Code</label>
+                            <label for="card-zip">ZIP</label>
                             <input type="text" placeholder="ZIP Code" name="card-zip" id="card-zip" required>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="checkout-button-wrapper">
                     <button id="checkout-button">Pay Now</button>
                 </div>
-                <div class="cart-container">
-                    <div class="cart-items">
-                        <!-- Items go on here... -->
+            </div>
+            <div class="cart-container">
+                <div class="cart-items-list">
+                    <div class="cart-item">
+                        <div class="item-img-container">
+                            <img class="item-img" src="./imgs/showcase_img4.jpg" />
+                        </div>
+                        <div class="item-details">
+                            <div>
+                                <p class="item-name">Ergonomic Keyboard</p>
+                                <p class="item-color">Black</p>
+                            </div>
+                            <p class="item-price">$129.99</p>
+                        </div>
                     </div>
-                     <div id="cart-info">
+                    <!-- More items go on here... -->
+                </div>
+                <div id="cart-info">
+                    <div id="cart-info-labels">
                         <p>Subtotal</p>
                         <p>Shipping</p>
                         <p>Total</p>
-                     </div>
+                    </div>
+                    <div id="cart-info-values">
+                        <p>$129.99</p>
+                        <p>$5.99</p>
+                        <p>$135.98</p>
+                    </div>
                 </div>
-            </main>
-        </div>
-    </body>
+            </div>
+        </main>
+    </div>
+</body>
 
 </html>

@@ -1,136 +1,139 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Ergonomix</title>
-        <link rel="stylesheet" type="text/css" href="styles/reset.css">
-        <link rel="stylesheet" type="text/css" href="styles/home.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-        <script src="./scripts/script.js" async></script>
-    </head>
-    <body>
-        <header>
-            <div class="header-container">
+
+<head>
+    <title>Ergonomix</title>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <script src="./scripts/script.js" async></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="./home_page.html" class="company-logo">ERGO<span>NOMIX</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-links">PRODUCTS</a></li>
+                    <li><a href="#" class="nav-links">ERGOFORM</a></li>
+                    <li><a href="#" class="nav-links">SUPPORT</a></li>
+                    <li><a href="#" class="nav-links">ABOUT</a></li>
+                </ul>
+            </nav>
+            <div class="search-login-cart">
+                <button id="search-toggle">
+                    <img src="./imgs/icon-search.png" class="nav-icon" id="search-icon">
+                </button>
+                <a href="#"><img src="./imgs/icon-login.png" class="nav-icon" id="login-icon"></a>
+                <a href="./checkout_page.html"><img src="./imgs/icon-cart.png" class="nav-icon" id="cart-icon"></a>
+            </div>
+            <div id="search-bar">
+                <input type="text" placeholder="Search..." name="search-input" id="search-input">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-showcase">
+            <img src="./imgs/showcase_img1.jpg" id="showcase-img1">
+            <img src="./imgs/showcase_img2.jpg" id="showcase-img2">
+            <img src="./imgs/showcase_img3.jpg" id="showcase-img3">
+            <img src="./imgs/showcase_img4.jpg" id="showcase-img4">
+        </div>
+        <div class="product-banner" id="product-banner-one">
+            <div class="banner-img-container">
+                <img src="./imgs/banner_peripherals.jpg" />
+            </div>
+            <div class="banner-info">
+                <h2>PERIPHERALS</h2>
+                <a href="#" class="product-redirect">SHOP NOW</a>
+            </div>
+        </div>
+        <div class="product-banner" id="product-banner-two">
+            <div class="banner-img-container">
+                <img src="./imgs/banner_furniture.jpg" />
+            </div>
+            <div class="banner-info">
+                <h2>FURNITURES</h2>
+                <a href="#" class="product-redirect">SHOP NOW</a>
+            </div>
+        </div>
+        <div class="product-banner" id="product-banner-three">
+            <div class="banner-img-container">
+                <img src="./imgs/banner_others.jpg" />
+            </div>
+            <div class="banner-info">
+                <h2>OTHERS</h2>
+                <a href="#" class="product-redirect">SHOP NOW</a>
+            </div>
+        </div>
+        <div class="ergoform-container">
+            <div class="ergoform-img-container">
+                <img src="./imgs/banner_ergoform.jpg" />
+            </div>
+            <div class="ergoform-info">
+                <h2>ERGOFORM</h2>
+                <p id="ergoform-tagline">Ergonomic Forming, Customized For You.</p>
+                <p id="ergoform-desc">Our professionals will assess your workspace, provide personalized
+                    recommendations, and implement solutions that prioritize comfort, productivity, and well-being.</p>
+                <a href="#" id="ergoform-redirect">LEARN MORE</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="top-footer">
+                <div class="left-footer">
+                    <h3>SOCIALS</h3>
+                    <div class="socials">
+                        <img src="./imgs/icon-twitter.png" class="social-icon" id="twitter" />
+                        <img src="./imgs/icon-instagram.png" class="social-icon" id="instagram" />
+                        <img src="./imgs/icon-discord.png" class="social-icon" id="discord" />
+                    </div>
+                    <form action="#" id="email-form">
+                        <input type="email" id="email-input" name="email-input" placeholder="email address..." />
+                        <input type="submit" id="email-submit" value="SUBSCRIBE" />
+                    </form>
+                </div>
+                <div class="right-footer">
+                    <div class="list-footer" id="product-footer">
+                        <h3>PRODUCTS</h3>
+                        <ul>
+                            <li><a href="#">ERGOFORM™</a></li>
+                            <li><a href="#">PERIPHERALS</a></li>
+                            <li><a href="#">FURNITURES</a></li>
+                            <li><a href="#">OTHERS</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-footer" id="support-footer">
+                        <h3>SUPPORT</h3>
+                        <ul>
+                            <li><a href="#">WARRANTY</a></li>
+                            <li><a href="#">REGISTER</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-footer" id="community-footer">
+                        <h3>COMMUNITY</h3>
+                        <ul>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">DISCORD</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
                 <a href="./home_page.html" class="company-logo">ERGO<span>NOMIX</span></a>
-                <nav>
-                    <ul>
-                        <li><a href="#" class="nav-links">PRODUCTS</a></li>
-                        <li><a href="#" class="nav-links">ERGOFORM</a></li>
-                        <li><a href="#" class="nav-links">SUPPORT</a></li>
-                        <li><a href="#" class="nav-links">ABOUT</a></li>
-                    </ul>
-                </nav>
-                <div class="search-login-cart">
-                    <button id="search-toggle">
-                        <img src="./imgs/icon-search.png" class="nav-icon" id="search-icon">
-                    </button>
-                    <a href="#"><img src="./imgs/icon-login.png" class="nav-icon" id="login-icon"></a>
-                    <a href="./checkout_page.html"><img src="./imgs/icon-cart.png" class="nav-icon" id="cart-icon"></a>
-                </div>
-                <div id="search-bar">
-                    <input type="text" placeholder="Search..." name="search-input" id="search-input">
-                </div>
+                <p class="legal-statements">@2025 Ergoflo®. All Rights Reserved.</p>
             </div>
-        </header>
+        </div>
+    </footer>
+</body>
 
-        <main>
-            <div class="product-showcase">
-                <img src="./imgs/showcase_img1.jpg" id="showcase-img1">
-                <img src="./imgs/showcase_img2.jpg" id="showcase-img2">
-                <img src="./imgs/showcase_img3.jpg" id="showcase-img3">
-                <img src="./imgs/showcase_img4.jpg" id="showcase-img4">
-            </div>
-            <div class="product-banner" id="product-banner-one">
-                <div class="banner-img-container">
-                    <img src="./imgs/banner_peripherals.jpg"/>
-                </div>
-                <div class="banner-info">
-                    <h2>PERIPHERALS</h2>
-                    <a href="#" class="product-redirect">SHOP NOW</a>
-                </div>
-            </div>
-            <div class="product-banner" id="product-banner-two">
-                <div class="banner-img-container">
-                    <img src="./imgs/banner_furniture.jpg"/>
-                </div>
-                <div class="banner-info">
-                    <h2>FURNITURES</h2>
-                    <a href="#" class="product-redirect">SHOP NOW</a>
-                </div>
-            </div>
-            <div class="product-banner" id="product-banner-three">
-                <div class="banner-img-container">
-                    <img src="./imgs/banner_others.jpg"/>
-                </div>
-                <div class="banner-info">
-                    <h2>OTHERS</h2>
-                    <a href="#" class="product-redirect">SHOP NOW</a>
-                </div>
-            </div>
-            <div class="ergoform-container">
-                <div class="ergoform-img-container">
-                    <img src="./imgs/banner_ergoform.jpg"/>
-                </div>
-                <div class="ergoform-info">
-                    <h2>ERGOFORM</h2>
-                    <p id="ergoform-tagline">Ergonomic Forming, Customized For You.</p>
-                    <p id="ergoform-desc">Our professionals will assess your workspace, provide personalized recommendations, and implement
-                        solutions that prioritize comfort, productivity, and well-being.</p>
-                    <a href="#" id="ergoform-redirect">LEARN MORE</a>
-                </div>
-            </div>
-        </main>
-
-        <footer>
-            <div class="footer-container">
-                <div class="top-footer">
-                    <div class="left-footer">
-                        <h3>SOCIALS</h3>
-                        <div class="socials">
-                            <img src="./imgs/icon-twitter.png" class="social-icon" id="twitter"/>
-                            <img src="./imgs/icon-instagram.png" class="social-icon" id="instagram"/>
-                            <img src="./imgs/icon-discord.png" class="social-icon" id="discord"/>
-                        </div>
-                        <form action="#" id="email-form">
-                            <input type="email" id="email-input" name="email-input" placeholder="email address..."/>
-                            <input type="submit" id="email-submit" value="SUBSCRIBE"/>
-                        </form>
-                    </div>
-                    <div class="right-footer">
-                        <div class="list-footer" id="product-footer">
-                            <h3>PRODUCTS</h3>
-                            <ul>
-                                <li><a href="#">ERGOFORM™</a></li>
-                                <li><a href="#">PERIPHERALS</a></li>
-                                <li><a href="#">FURNITURES</a></li>
-                                <li><a href="#">OTHERS</a></li>
-                            </ul>
-                        </div>
-                        <div class="list-footer" id="support-footer">
-                            <h3>SUPPORT</h3>
-                            <ul>
-                                <li><a href="#">WARRANTY</a></li>
-                                <li><a href="#">REGISTER</a></li>
-                                <li><a href="#">FAQs</a></li>
-                                <li><a href="#">CONTACT US</a></li>
-                            </ul>
-                        </div>
-                        <div class="list-footer" id="community-footer">
-                            <h3>COMMUNITY</h3>
-                            <ul>
-                                <li><a href="#">ABOUT US</a></li>
-                                <li><a href="#">NEWS</a></li>
-                                <li><a href="#">DISCORD</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-footer">
-                    <a href="./home_page.html" class="company-logo">ERGO<span>NOMIX</span></a>
-                    <p class="legal-statements">@2025 Ergoflo®. All Rights Reserved.</p>
-                </div>
-            </div>
-        </footer>
-    </body>
 </html>
